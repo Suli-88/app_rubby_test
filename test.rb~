@@ -1,0 +1,24 @@
+require 'net/http'
+require 'json'
+#url = URI.parse('http://co3.local/api/1/contributors/2')
+url = URI.parse('http://co3.local/api/1/contributors/2')
+
+
+
+request = Net::HTTP::Get.new(url.to_s, {"Authorization"=>"Bearer =oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR"})
+
+
+http = Net::HTTP.new(url.host, url.port)
+response = http.start { |http| http.request(request) }
+
+#For a successfull request the response message is ok
+puts response.message
+
+#For ok status the response code is 200
+puts response.code
+
+#Get the reponse body
+puts response.body
+
+#Get the response header
+puts response.header
