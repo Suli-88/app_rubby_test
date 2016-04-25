@@ -88,7 +88,9 @@ else
 	puts 'test is not passed'
 end
 #Get the reponse body
-#puts response.body
+#Show the body of the response
+puts 'the body of the get response: '
+puts response.body
 
 #Get the response header
 #puts response.header
