@@ -1,0 +1,21 @@
+
+
+
+#Example for a Get request
+ruby Get.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/session/1"
+
+
+
+
+
+#Example for a Delete request
+ruby Delete.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/session/1"
+
+
+
+#Example for a Post request
+ruby Post.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/congresses" -b "request-body.json"
+
+#Example for a Put request
+uby Put.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/congresses/1" -b "request-body.json"
+
