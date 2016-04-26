@@ -1,0 +1,17 @@
+{
+"congresses":
+{
+"id":1,
+"inserted":null,
+"updated":null,
+"owner_ref":null,
+"last_editor_ref":null,
+"state_key":null,
+"deleted":null,
+"version_number":null,
+"transaction_number":null,
+"name": "test 234 32243",
+"start_date":"2016-02-22",
+"end_date":"2016-02-22"
+}
+}
