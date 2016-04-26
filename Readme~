@@ -1,4 +1,0 @@
-ruby Get.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/session/1"
-
-ruby Delete.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/session/1"
-
