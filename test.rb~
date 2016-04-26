@@ -1,24 +1,33 @@
+#!/usr/bin/ruby
+# Years till 100
+require 'optparse'
 require 'net/http'
 require 'json'
-#url = URI.parse('http://co3.local/api/1/contributors/2')
-url = URI.parse('http://co3.local/api/1/contributors/2')
 
 
+url = URI.parse('http://co3.local/api/1/congresses')
+#, initheader = {'Content-Type' =>'application/json'}
 
-request = Net::HTTP::Get.new(url.to_s, {"Authorization"=>"Bearer =oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR"})
+
+req = Net::HTTP::Post.new(url, {'Authorization' => 'Bearer =oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR', 'Content-Type' => 'application/json'})
 
 
-http = Net::HTTP.new(url.host, url.port)
-response = http.start { |http| http.request(request) }
+req.body = {
+"congresses":
+{
+"name": "test 234 32243",
+"start_date":"2016-02-22",
+"end_date":"2016-02-22"
+}
+}.to_json
+res = Net::HTTP.start(url.hostname, url.port) do |http|
+  http.request(req)
+end
 
-#For a successfull request the response message is ok
-puts response.message
-
-#For ok status the response code is 200
-puts response.code
-
-#Get the reponse body
+puts 'resposne code is : '+res.code
+puts 'response message is: '+res.message
 puts response.body
 
-#Get the response header
-puts response.header
+
+
+
