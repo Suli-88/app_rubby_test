@@ -1,19 +1,19 @@
 
 
 
-#Example for a Get request
+#Example for Get
 ruby Get.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/session/1"
 
 
 
 
 
-#Example for a Delete request
+#Example for Delete
 ruby Delete.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/session/1"
 
 
 
-#Example for a Post request
+#Example for Post
 ruby Post.rb -t "oQRMlkQP10XTNVRSdkTPN0XTV1TNllTP5UQfVTMwITTTNVR" -u "http://co3.local/api/1/congresses" -b "post.json"
 
 
